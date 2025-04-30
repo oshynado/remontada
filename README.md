@@ -1,5 +1,7 @@
 # REMONTADA - Football Training Platform ⚽
 
+![REMONTADA logo] (https://github.com/oshynado/remontada/blob/bf06f9a9025ff2e6329215e64df18e08f36a2751/main%20content/logo.png?raw=true)
+
 ## Overview
 
 REMONTADA is a front-end football training platform designed to help players improve their skills, fitness, and tactical knowledge. The name "Remontada" (meaning "comeback" in Spanish) reflects the platform's mission to help users make a comeback in their football level.
@@ -23,7 +25,8 @@ REMONTADA is a front-end football training platform designed to help players imp
 
 ## Important Note ⚠️
 
-This is a **front-end only** project with no backend implementation. All interactive features are UI mockups without actual functionality.
+- This is a **front-end only** project with no backend implementation. All interactive features are UI mockups without actual functionality.
+-there is a erd file that shown all of the sql work for the project
 
 ## Future Improvements 🔮
 

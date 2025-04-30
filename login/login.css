@@ -1,0 +1,125 @@
+#background-video {
+    opacity: 0.95;
+
+    max-width: 101%;
+    max-height: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: -5px;
+
+}
+body{
+    height: 100px;
+    background-color: white;
+}
+.word-login{
+    top: 1%;
+    text-align: center;
+    color: white;
+    left:  38%;
+}
+#login-content{
+    opacity: 0.7;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    border-radius: 10%;
+    margin-top: 10px;
+
+
+}
+.login-picutcer{
+    text-align: center;
+}
+.form-control {
+    position: relative;
+    margin: 10px;
+    width: 290px;
+    margin-left: 150px;
+  }
+  
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: rgb(255, 0, 0);
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: rgb(0, 191, 255);
+    transform: translateY(-30px);
+  }
+
+  .show-password{
+    color: #fff;
+    margin: 40px;
+    margin-left: 150px;
+  }
+  .forgot{
+    margin-left: 40px;
+    color: #fff;
+    outline: 0px solid transparent;
+  }
+  #sub-btn{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    margin: 20px;
+    font-weight: 700;
+    border: solid 5px rgb(204, 187, 175);
+  }
+  
+  #sub-btn:hover,
+  :focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    /* box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+      0 0 100px #008cff; */
+  }
+  .btns{
+    /* background-color: #008cff; */
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }

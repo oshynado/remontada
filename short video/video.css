@@ -1,0 +1,179 @@
+body {
+  background-color: #3ab6a6;
+}
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2690px;
+  background-image: url(Lovepik_com-450158586-Football\ Seamless\ Pattern\ Design.png);
+  background-position: top;
+  background-repeat: repeat-y;
+  background-size: cover;
+  z-index: -1;
+  filter: opacity(0.3) blur(5px);
+}
+
+.father {
+  background-color: #ddd;
+  width: 800px;
+  height: 2530px;
+  margin-top: 20px;
+  margin-left: 20%;
+  border-radius: 10px;
+}
+.first {
+  margin-left: 5%;
+  background-color: #cbc9cf;
+  /* margin: 5%; */
+  margin-right: 5%;
+  padding-top: -5%;
+  border-radius: 5%;
+}
+
+.first img {
+  border-radius: 60%;
+  margin-top: 20px;
+}
+.first video {
+  margin-left: 10%;
+  width: 600px;
+  height: 400px;
+  /* margin-top: 5%; */
+}
+#first {
+  justify-content: center;
+  display: flex;
+  width: 400px;
+}
+#first h2 {
+  margin: 20px;
+}
+.write1 {
+  margin: 1px;
+}
+.write1 p {
+  margin-left: 20px;
+  margin-top: -20px;
+  color: rgba(0, 0, 0, 0.487);
+}
+.word_on_video1 {
+  margin-left: 10%;
+  margin-bottom: -3%;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.833);
+}
+.word_on_video2 {
+  margin-left: 10%;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.833);
+}
+.word_on_video3 {
+  margin-left: 10%;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.833);
+  margin-bottom: 10px;
+}
+.follow {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 900;
+  color: var(--color);
+}
+
+.follow:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.follow:hover {
+  color: #fff;
+}
+
+.follow:before {
+  top: 50%;
+  left: 50%;
+  transition: all 0.7s;
+}
+
+.follow:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.follow:active:before {
+  background: #3a0ca3;
+}
+.first_icon {
+  /* background-color: #000f10; */
+  width: 90%;
+  height: 50px;
+  margin-left: 10%;
+  text-align: end;
+}
+.first_icon img {
+  height: 35px;
+  width: 35px;
+  border-radius: 0px;
+  margin: 5px;
+}
+.heart:hover {
+  content: url(/icons/heart-hover.png);
+}
+.comment:hover {
+  content: url(/icons/chat-hover.png);
+}
+.share:hover {
+  content: url(/icons/share-hover.png);
+}
+.bookmark:hover {
+  content: url(/icons/bookmark-hover.png);
+}
+.ellipsis:hover {
+  content: url(/icons/ellipsis-hover.png);
+}
+.heart.clicked {
+  content: url(/icons/heart-clicked.png);
+}
+.bookmark.clicked {
+  content: url(/icons/bookmark-clicked.png);
+}
+var {
+  margin: 10%;
+}
+span {
+  color: blue;
+  cursor: pointer;
+}
+
+.far {
+  font-size: 30px;
+  margin-right: 5%;
+  cursor: pointer;
+}
+.fa-solid {
+  margin-right: 5%;
+  font-size: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>remontada</title>
+    <link rel="stylesheet" href="training.css" />
+    <link rel="stylesheet" href="../main content/nav.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar-cont">
+          <div class="menu">
+            <label class="hamberger-menu">
+              <input type="checkbox" />
+            </label>
+            <div class="menu-list">
+              <a href="../home/home.html">Home</a>
+              <a href="../profile/profile.html">Profile</a>
+              <a href="../tournaments/tournaments.html">Tournaments</a>
+              <a href="../booking/booking.html">Booking</a>
+              <a href="../short video/video.html">Removids</a>
+              <a href="../training/training.html" style="color: rgb(2, 119, 119)">Training</a>
+              <a href="../tactics/TACTIC.html">Foodtacs</a>
+            </div>
+          </div>
+          <div class="center">
+            <a href="../main/index.html"
+              ><img src="../main content/logo.png" alt="Navbar Logo"
+            /></a>
+          </div>
+          <div class="left">
+            <a href="../login/login.html"
+              ><i class="fa-solid fa-right-to-bracket"></i> Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--<div class="radio-group">
+        <label class="skills lab" for="skills">
+        Football Skills
+      </label>
+      <input type="radio" value="skills" class=" rad" name="train" id="skills">
+      <label class="fit lab" for="fit">
+        Fitness
+      </label>
+      <input type="radio" value="fit" class=" rad" name="train" id="fit">
+      </div>-->
+      <div class="switcher">
+        <button class="btn skills checked">Football Skills</button>
+        <button class="btn fit">Fitness</button>
+      </div>
+      <section class="sect" id="sec-skills">
+        <div class="card">
+          <video
+            src="skill1.mp4"
+            class="clip"
+            type="video/mp4"
+            loop
+            muted
+          ></video>
+          <h3 class="details">The skill name</h3>
+          <div class="difficulty">
+            difficulty:
+            <p class="easy">easy</p>
+          </div>
+          <button class="btns">Start!</button>
+        </div>
+        <div class="card">
+          <video
+            src="skill2.mp4"
+            class="clip"
+            type="video/mp4"
+            loop
+            muted
+          ></video>
+          <h3 class="details">The skill name</h3>
+          <div class="difficulty">
+            difficulty:
+            <p class="medium">medium</p>
+          </div>
+          <button class="btns">Start!</button>
+        </div>
+        <div class="card">
+          <video
+            src="skill3.mp4"
+            class="clip"
+            type="video/mp4"
+            loop
+            muted
+          ></video>
+          <h3 class="details">The skill name</h3>
+          <div class="difficulty">
+            difficulty:
+            <p class="hard">hard</p>
+          </div>
+          <button class="btns">Start!</button>
+        </div>
+      </section>
+      <section class="sect" id="sec-fit">
+        <div class="card">
+          <video
+            src="fit1.mp4"
+            class="clip"
+            type="video/mp4"
+            loop
+            muted
+          ></video>
+          <h3 class="details">The exercise name</h3>
+          <div class="time">
+            duration:
+            <p class="sets">45sec</p>
+          </div>
+          <button class="btns">Start!</button>
+        </div>
+        <div class="card">
+          <video
+            src="fit2.mp4"
+            class="clip"
+            type="video/mp4"
+            loop
+            muted
+          ></video>
+          <h3 class="details">The exercise name</h3>
+          <div class="time">
+            duration:
+            <p class="sets">45sec</p>
+          </div>
+          <button class="btns">Start!</button>
+        </div>
+        <div class="card">
+          <video
+            src="fit3.mp4"
+            class="clip"
+            type="video/mp4"
+            loop
+            muted
+          ></video>
+          <h3 class="details">The exercise name</h3>
+          <div class="time">
+            duration:
+            <p class="sets">60s x 2</p>
+          </div>
+          <button class="btns">Start!</button>
+        </div>
+      </section>
+    </main>
+    <div class="background"></div>
+    <script>
+      let skillbtn = document.querySelector(".skills"),
+        skillsec = document.querySelector("#sec-skills"),
+        fitsec = document.querySelector("#sec-fit");
+      skillbtn.addEventListener("click", () => {
+        skillbtn.classList.add("checked");
+        fitbtn.classList.remove("checked");
+        skillsec.style.display = "flex";
+        fitsec.style.display = "none";
+      });
+      let fitbtn = document.querySelector(".fit");
+      fitbtn.addEventListener("click", () => {
+        fitbtn.classList.add("checked");
+        skillbtn.classList.remove("checked");
+        fitsec.style.display = "flex";
+        skillsec.style.display = "none";
+      });
+      const clip = document.querySelectorAll(".clip");
+      for (let i = 0; i < clip.length; i++) {
+        clip[i].addEventListener("mouseenter", function (e) {
+          clip[i].play();
+        });
+        clip[i].addEventListener("mouseout", function (e) {
+          clip[i].pause();
+          clip[i].currentTime = 0;
+        });
+      }
+    </script>
+  </body>
+</html>

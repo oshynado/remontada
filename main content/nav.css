@@ -1,0 +1,133 @@
+.header {
+  /* position: fixed; */
+  padding: 30px 100px;
+  /*width: 85%;*/
+  top: 0;
+}
+.navbar {
+  position: relative;
+  background-color: #003438;
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px #000f10;
+  border: 2px solid #000f10;
+}
+.navbar-cont {
+  margin: 0 50px;
+  padding: 28px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+:root {
+  --bar-height: 6px;
+  --bar-width: 40px;
+  --ham-gap: 5px;
+  --animation-timing: 200ms ease-in-out;
+  --hamberger-height: calc(var(--bar-height) * 3 + var(--ham-gap) * 2);
+}
+.hamberger-menu {
+  --x-width: calc(var(--hamberger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ham-gap);
+  width: max-content;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.navbar-cont .hamberger-menu::before,
+.navbar-cont .hamberger-menu::after,
+.hamberger-menu input {
+  content: "";
+  /*display: block;*/
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: rgb(219, 235, 241);
+  border-radius: 100px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing);
+}
+.hamberger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+.hamberger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+.hamberger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+.hamberger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+.menu .menu-list a {
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 300;
+  color: #003438;
+  padding: 10px 8px;
+}
+.menu .menu-list {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -10px;
+  width: 200px;
+  border: 3px solid #003438;
+  border-radius: 7px;
+  z-index: 99;
+  background: rgb(219, 235, 241);
+  display: none;
+}
+.menu-list a:hover {
+  background-color: #003438;
+  color: rgb(219, 235, 241);
+  font-weight: 500;
+}
+.hamberger-menu:has(input:checked) + .menu-list {
+  display: block;
+}
+
+.navbar-cont .left a {
+  border: 2px solid #000f10;
+  background-color: #ddd;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #003438f1;
+  font-weight: 800;
+  font-size: 19px;
+  transition: 0.5s ease;
+}
+.navbar-cont .left a:hover {
+  background: none;
+  border: 2px solid #2aad9d;
+  color: #2aad9d;
+}
+
+.navbar-cont .left a i {
+  margin-right: 5px;
+}
+
+.navbar-cont .center {
+  position: relative;
+}
+
+.navbar-cont .center img {
+  position: absolute;
+  margin-left: 60px;
+  top: 80%;
+  transform: translate(-80%, -50%);
+  margin-top: 30px;
+  width: 120px;
+}

@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  position: sticky;
+  /* position: fixed; */
+  padding: 30px 100px;
+  /*width: 85%;*/
+  top: 0;
+  z-index: 99;
+}
+.navbar {
+  top: 15px;
+  background-color: #134b70;
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px #000f10;
+  border: 2px solid #000f10;
+}
+.navbar-cont {
+  margin: 0 50px;
+  padding: 28px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-cont .right a {
+  border: 2px solid #000f10;
+  background-color: #ddd;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #003438f1;
+  font-weight: 800;
+  font-size: 19px;
+  transition: 0.5s ease;
+}
+.navbar-cont .right a:hover {
+  background: none;
+  border: 2px solid #2aad9d;
+  color: #2aad9d;
+}
+
+.navbar-cont .right a i {
+  margin-right: 5px;
+}
+
+.navbar-cont .center {
+  position: relative;
+}
+
+.navbar-cont .center img {
+  position: absolute;
+  margin-left: 60px;
+  top: 80%;
+  transform: translate(-80%, -50%);
+  margin-top: 30px;
+  width: 120px;
+}
+section {
+  width: 100vw;
+  height: 90vh;
+}
+::-webkit-scrollbar {
+  width: 1vw;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(147, 159, 163, 0.589);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #474747;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2e2e2e;
+}
+.first {
+  height: 100vh;
+  background-color: #508c9b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+.first h1 {
+  font-size: 92px;
+  font-weight: 500;
+  font-family: Montserrat ExtraBold;
+}
+.first img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: -6px;
+  animation: rotation 7s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.first h3 {
+  font-size: 52px;
+  font-weight: 300;
+  font-family: Montserrat ExtraBold;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: absolute;
+  height: 100px;
+  top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: #eeeeee9d;
+  font-size: 42px;
+}
+.item1 {
+  animation-delay: calc(50s / 8 * (8 - 1) * -1);
+}
+.item2 {
+  animation-delay: calc(50s / 8 * (8 - 2) * -1);
+}
+.item3 {
+  animation-delay: calc(50s / 8 * (8 - 3) * -1);
+}
+.item4 {
+  animation-delay: calc(50s / 8 * (8 - 4) * -1);
+}
+.item5 {
+  animation-delay: calc(50s / 8 * (8 - 5) * -1);
+}
+.item6 {
+  animation-delay: calc(50s / 8 * (8 - 6) * -1);
+}
+.item7 {
+  animation-delay: calc(50s / 8 * (8 - 7) * -1);
+}
+.item8 {
+  animation-delay: calc(50s / 8 * (8 - 8) * -1);
+}
+.fit {
+  background-color: #eeeeee;
+  color: #114364;
+}
+.fit h3 {
+  position: relative;
+  margin: 20px;
+  margin-left: 34vw;
+  font-size: 50px;
+  z-index: 2;
+  font-family: Montserrat ExtraBold;
+}
+
+h2 {
+  font-size: 75px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.fit .left {
+  margin-left: 5vw;
+  font-size: 45px;
+  width: 65vw;
+  font-family: Montserrat ExtraBold;
+  text-shadow: 5px 2px 15px rgba(0, 0, 0, 0.315);
+}
+.fit .clip,
+.skill .clip {
+  position: relative;
+  height: 51.7vh;
+  width: 30.58vh;
+}
+.fit .right {
+  float: right;
+  border: 10px solid #508c9b;
+  padding: -10px 0px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.384);
+}
+.fit .right#clip1 {
+  top: 2vh;
+  right: 15vw;
+}
+.fit .right#clip2 {
+  top: 17vh;
+  right: -5vw;
+}
+.skill {
+  background-color: #201e43;
+  color: #eeeeee;
+}
+.skill .left {
+  float: left;
+  border: 10px solid #134b70;
+  padding: -10px 0px;
+  box-shadow: 2px 5px 15px #eeeeee54;
+}
+.skill .left#clip1 {
+  top: 12vh;
+  left: 5vw;
+}
+.skill .left#clip2 {
+  top: 30vh;
+  left: vw;
+}
+.skill .right {
+  position: relative;
+  display: inline-table;
+  top: 25vh;
+  left: 8vw;
+  font-size: 45px;
+  width: 65vw;
+  font-family: Montserrat ExtraBold;
+  text-shadow: 5px 2px 15px #eeeeee54;
+}
+.skill h2 {
+  margin-bottom: 20px;
+  font-size: 80px;
+}
+.tactics .mid {
+  position: relative;
+  left: 41vw;
+  height: 60vh;
+  width: 18.75vw;
+  background-image: url(football-field.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #201e433a;
+}
+.tactics .players {
+  position: relative;
+  color: #eeeeee;
+  background-color: #201e43;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px #eeeeeecc;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 4px;
+}
+.tactics .lines {
+  position: relative;
+  height: 5vh;
+  width: 18.75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tactics .players#p1 {
+  top: 28.5vh;
+  left: 8.1vw;
+}
+.tactics .cb {
+  top: 24vh;
+  gap: 25%;
+}
+.tactics .rlb {
+  top: 22vh;
+  gap: 70%;
+}
+.tactics .mids {
+  top: 17vh;
+  gap: 25%;
+}
+.tactics .wings {
+  top: 10vh;
+  gap: 65%;
+}
+.tactics .st {
+  top: 8vh;
+  gap: 25%;
+}
+.tactics .left {
+  position: relative;
+  bottom: 45vh;
+  left: 2vw;
+  width: 38vw;
+  font-size: 42px;
+  font-family: Montserrat ExtraBold;
+  color: #134b70;
+}
+.tactics .right {
+  position: relative;
+  bottom: 98vh;
+  left: 63vw;
+  width: 36vw;
+  font-size: 48px;
+  font-family: "Montserrat ExtraBold";
+  color: #134b70;
+}
+#field4-3-3 {
+  top: 17vh;
+}
+.tactics .mid.reveal.active#field4-3-3 {
+  animation: anim-out 1s ease-in-out 4s both;
+}
+#field4-4-2 {
+  bottom: 164.5vh;
+}
+.tactics .mid.reveal.active#field4-4-2 {
+  animation: anim-in 1s ease-in-out 4s both;
+}
+/*// keyframes//
+@keyframes p10trans{
+  from {transform: translate(0vw 17vh);}
+  to{transform: translate(6vw 8vh);}
+}*/
+@keyframes anim-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes anim-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.booking {
+  width: 50vw;
+  background-color: #508c9b;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.booking h2 {
+  color: #ffffff;
+  font-family: "Montserrat ExtraBold";
+  font-size: 65px;
+  margin-left: 5vw;
+}
+.booking .mid {
+  background-color: #ffffff;
+  color: #201e43;
+  width: 30vw;
+  height: 35vh;
+  margin: 0 10vw;
+  font-family: "Montserrat ExtraBold";
+  border: 8px solid #201e43;
+  border-radius: 10px;
+  font-size: 21px;
+  padding: 10px;
+}
+.tournament {
+  width: 50vw;
+  background-color: #201e43;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.tournament h2 {
+  color: #ffffff;
+  font-family: "Montserrat ExtraBold";
+  font-size: 65px;
+  margin-left: 7vw;
+}
+.tournament .mid {
+  background-color: #eeeeee;
+  color: #508c9b;
+  width: 30vw;
+  height: 35vh;
+  margin: 0 10vw;
+  font-family: "Montserrat";
+  border: 8px solid #508c9b;
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px;
+}
+.removids {
+  background-color: #114364;
+}
+.removids h2{
+  color: #eeeeee;
+  font-family: "Montserrat ExtraBold";
+  font-size: 65px;
+  margin-left: 7vw;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.vidcard {
+  height: 60vh;
+  width: 26vw;
+  background-color: #dbdada;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 20px;
+  font-style: italic;
+  gap: 2vh;
+}
+.vidcard .clip {
+  height: 50vh;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.discreption{
+  font-size: 32px;
+  color: #eeeeee;
+  margin-top: 3vh;
+  margin-left: 2vw;
+}
+.join {
+  background-image: linear-gradient(
+    to bottom right,
+    #201e43,
+    #134b70,
+    #508c9b,
+    #eeeeee
+  );
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 15vh;
+}
+.join h2 {
+  text-align: center;
+  text-shadow: 0px 4px 10px black;
+}
+.join a {
+  width: 10vw;
+  height: 10vh;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: "Montserrat ExtraBold";
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 3vh 2vw;
+  background-color: #508c9b;
+  box-shadow: 0px 4px 15px black;
+  margin-right: 5vw;
+}
+.join a:hover {
+  background-color: #134b70;
+  scale: 200%;
+  transition: 0.5s ease-in;
+}
+.log {
+  position: relative;
+  left: 35%;
+}
+footer {
+  height: 30vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to top right,
+    #201e43,
+    #134b70,
+    #508c9b,
+    #eeeeee
+  );
+}
+.footback {
+  height: 30vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.404);
+}
+footer p {
+  position: relative;
+  top: 20vh;
+  color: #eeeeee54;
+  font-size: 18px;
+}
+.footlinks a {
+  color: #eeeeee54;
+  font-size: 22px;
+}
+.footlinks a:hover {
+  color: #eeeeee9d;
+  text-decoration: none;
+}
+.footlinks {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.booking .reveal {
+  transform: translatex(-150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.booking .reveal.active {
+  transform: translatex(0px);
+  opacity: 1;
+}
+.tournament .reveal {
+  transform: translatex(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.tournament .reveal.active {
+  transform: translatex(0px);
+  opacity: 1;
+}
+.active#card1{
+  transition: all 1s ease;
+}
+.active#card2{
+  transition: all 2.5s ease;
+}
+.active#card3{
+  transition: all 3.5s ease;
+}

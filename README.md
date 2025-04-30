@@ -1,6 +1,6 @@
 # REMONTADA - Football Training Platform ⚽
 
-![REMONTADA logo] (https://github.com/oshynado/remontada/blob/bf06f9a9025ff2e6329215e64df18e08f36a2751/main%20content/logo.png?raw=true)
+![REMONTADA logo] (https://github.com/oshynado/remontada/blob/bf06f9a9025ff2e6329215e64df18e08f36a2751/main%20content/logo.png)
 
 ## Overview
 
